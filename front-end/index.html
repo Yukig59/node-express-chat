@@ -41,7 +41,7 @@
 					<li class="item active">
 						<a href="#">
 							<i class="fa fa-user"></i>
-							<span>Team chat</span>
+							Team chat<span id="counter"></span>
 							<i class="fa fa-times"></i>
 						</a>
 					</li>
@@ -62,34 +62,20 @@
 			<div class="chat-area">
 				<div class="title"><b>Conversation title</b><i class="fa fa-search"></i></div>
 				<div class="chat-list">
-					<ul>
-						<li class="me">
-							<div class="name">
-								<span class="">John Doe</span>
-							</div>
-							<div class="message">
-								<p>Hello</p>
-								<span class="msg-time">5:00 pm</span>
-							</div>
-						</li>
-						<li class="">
-							<div class="name">
-								<span class="">Christian Smith</span>
-							</div>
-							<div class="message">
-								<p>World</p>
-								<span class="msg-time">5:01 pm</span>
-							</div>
-						</li>
+					<ul id="messages">
+
 					</ul>
 				</div>
-				<div class="input-area">
-					<div class="input-wrapper">
-						<input type="text" value="" placeholder="Message here">
-						<i class="fa fa-smile-o"></i>
+				<form name="message" action="#">
+					<div class="input-area">
+						<div class="input-wrapper">
+							<input type="text" value="" name="input" placeholder="Message here">
+							<i class="fa fa-smile-o"></i>
+						</div>
+						<input type="button" value="Submit" class="send-btn">
+
 					</div>
-					<input type="button" value="Submit" class="send-btn">
-				</div>
+				</form>
 			</div>
 			<div class="right-tabs">
 				<ul class="tabs">
